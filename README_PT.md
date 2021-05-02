@@ -23,7 +23,7 @@ Trabalho em andamento
 DESCRIÇÃO
 ---------
 
-Esse pacote disponibiliza funções para importar as bases mais comuns de microdados brasileiros. Importar estes microdados pode ser tedioso. A maior parte dos dados é disponibilizada em arquivos do tipo txt colunado (fixed width files, fwf) e, geralmente, contém scripts de importação somente para SAS e SPSS. Os dados algumas vezes vem subdivididos em muitos arquivos, por UF ou Região. Além disso é comum que nomes de arquivos e de variáveis de certa base de dados variem ao longo do tempo. `microdadoBrasil` cuida desses detalhes pra você. Internamente o pacote está rodando `readr` para arquivos fwf e `data.table` aquivos separados por delimitadores (csv). Assim, a importação é rápida.
+Esse pacote disponibiliza funções para importar as bases mais comuns de microdados brasileiros. Importar estes microdados pode ser tedioso. A maior parte dos dados é disponibilizada em arquivos do tipo txt colunado (fixed width files, fwf) e, geralmente, contém scripts de importação somente para SAS e SPSS. Os dados algumas vezes vêm subdivididos em muitos arquivos, por UF ou Região. Além disso é comum que nomes de arquivos e de variáveis de certa base de dados variem ao longo do tempo. `microdadoBrasil` cuida desses detalhes pra você. Internamente o pacote está rodando `readr` para arquivos fwf e `data.table` aquivos separados por delimitadores (csv). Assim, a importação é rápida.
 
 Atualmente, o pacote inclui funções de importação para as seguintes bases de dados:
 
@@ -110,6 +110,6 @@ Esse pacote foi altamente influenciado por esforços similares, que são grande 
 
 #### Princípios de concepção do pacote
 
-O principal princípio utilizado na construção do pacote foi separar os detalhes de cada base de dados, como a estrutura de pastas e nome de arquivos em tabelas de metadados(salvos como arquivos .csv na pasta `extdata`). O conteúdo dessas tabelas, assim como uma lista contendo os dicionários de importação extraídos dos dicionários oficiais em formato SAS, seve como parâmetro para a importação dos microdados para cada ano. Essa separação entre detalhes específicos de cada base de dados e código torna o código mais simples e generalizável, facilitando a extensão para novas base de dados.
+O principal princípio utilizado na construção do pacote foi separar os detalhes de cada base de dados, como a estrutura de pastas e nome de arquivos em tabelas de metadados (salvos como arquivos .csv na pasta `extdata`). O conteúdo dessas tabelas, assim como uma lista contendo os dicionários de importação extraídos dos dicionários oficiais em formato SAS, seve como parâmetro para a importação dos microdados para cada ano. Essa separação entre detalhes específicos de cada base de dados e código torna o código mais simples e generalizável, facilitando a extensão para novas base de dados.
 
 ergonomics over speed (develop)

@@ -223,5 +223,5 @@ Users then normally manually reconstruct the import dictionaries in R by hand. T
 
 The main design principle was separating details of each dataset in each year - such as folder structure, data files and import dictionaries of the of original data - into metadata tables (saved as csv files at the `extdata` folder). The elements in these tables, along with list of import dictionaries extracted from the SAS import instructions from the data provider,  serve as parameters to import a dataset for a specific year. This separation of dataset specific details from the actual code makes code short and easier to extend to new packages.   
 
-ergonomics over speed (develop)
+One of the challenges when working with brazilian datasets is that they are both long and wide, contaning many observations and variables, with significant complexity. Most import and transform solutions favor speed, but require some programming proficiency to be understood and implemented. This package chooses to focus on ease-of-use rather than performance, since most data analysts will not benefit from marginal increases in speed, but will definitely feel more encouraged to use it for data analysis if the process is simplified.
 
