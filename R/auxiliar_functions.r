@@ -89,7 +89,7 @@ get_available_datasets <- function(){
   return(datasets_list)
 }
 
-#' Returns the periods for wich we have information about a dataset in the package
+#' Returns the periods for which we have information about a dataset in the package
 #'
 #' @param  dataset name of the dataset. See get_available_datasets() for options.
 #' @param  fwfonly (optional) TRUE/FALSE if TRUE returns only the periods for wich the dataset is distributed as a fixed width file.
